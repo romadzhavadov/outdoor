@@ -1,0 +1,277 @@
+.family {
+    padding: 100px 0;
+    overflow: hidden;
+
+    &__head {
+        display: block;
+        text-align: center;
+        margin-bottom: 21px;
+
+        &-info {
+            color: #E6B939;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        &-caption {
+            color: #575445;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 7px;
+        }
+
+        &-desc {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #575445;
+            max-width: 538px;
+            margin: 0 auto;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+    }
+
+    &__col {
+        width: 33.33%;
+        padding: 8px;
+        overflow: hidden;
+    }
+
+    &__card {
+        max-width: 379px;
+        height: 473px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__card-first  {
+        background-image: url(../images/family/Accessories.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__card-second {
+        background-image: url(../images/family/Apparel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__card-thirth {
+        background-image: url(../images/family/Climbing\ Gear.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__card-forth {
+        background-image: url(../images/family/Headwear.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__card-fifth {
+        background-image: url(../images/family/Hiking\ Gear.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__card-sixth {
+        background-image: url(../images/family/Jackets.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } 
+
+    &__caption {
+        color: #575445;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 9px;
+        padding-top: 39px;
+    }
+
+    &__desc {
+        color: #575445;
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        max-width: 252px;
+
+        &-middle {
+            max-width: 269px;
+        }
+
+        &-max {
+            max-width: 291px;
+        }
+    }
+
+    &__item {
+        text-align: center;
+
+        & span {
+            color: #575445;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        &-link {
+            color: #575445;
+            font-size: 15px;
+            line-height: 1.4;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #E6B939;
+                transition: 0.3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 21px;
+
+        &-link {
+            color: #575445;
+            font-size: 15px;
+            line-height: 1.4;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #E6B939;
+                transition: 0.3s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    } 
+}
+
+@media (max-width: 1024px) {
+    .family {
+        &__col {
+            width: 50%;
+        }
+
+        &__card {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .family  {
+        &__head {
+            &-info {
+                font-size: 14px;
+            }
+        
+            &-caption {
+                font-size: 29px;
+            }
+        
+            &-desc {
+                font-size: 14px;
+            }
+        }
+
+        &__col {
+            width: 100%;
+        }
+
+        &__caption {
+            font-size: 24px;
+        }
+    }  
+}
+
+@media (max-width: 425px) {
+    .family  {
+        &__head {
+            &-info {
+                font-size: 12px;
+            }
+        
+            &-caption {
+                font-size: 22px;
+            }
+        
+            &-desc {
+                font-size: 13px;
+            }
+        }
+
+        &__card {
+            height: 425px;
+        }
+
+        &__caption {
+            font-size: 20px;
+        }
+    
+        &__desc {
+            font-size: 14px;
+        }
+    
+        &__item {
+
+            & span {
+                font-size: 13px;
+            }
+    
+            &-link {
+                font-size: 13px;
+            }
+        }
+    
+        &__social-link {
+            font-size: 13px;
+        }
+    }  
+}
+
+@media (max-width: 375px) {
+    .family {
+        &__card {
+            height: 375px;
+        }
+    }
+}
+
+
+
